@@ -35,16 +35,8 @@ def root_raised_cos(Ns,b,M=6):
 
 if __name__=='__main__':
     from matplotlib import pyplot as plt
-    from digital_comm import *
-    
     ir_rc=root_raised_cos(6.0,0.35)
     plt.plot(ir_rc)
 
-    rrc_ir=sqrt_rc_imp(6.0,0.35)
-    plt.plot(rrc_ir)
-
-    #diff=[abs(a-b) for a,b in zip(ir_rc,rrc_ir)]
-    
     plt.plot(ir_rc)
-    plt.plot(rrc_ir)
     plt.show()
